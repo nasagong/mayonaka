@@ -11,7 +11,7 @@ Leveraging gRPC—a high-performance communication framework that surpasses trad
 
 Like its namesake, the app provides a discreet and secure digital sanctuary where users can engage in private conversations, hidden from prying eyes under the metaphorical cover of night.
 
----
+
 
 ## Why gRPC ?
 
