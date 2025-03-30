@@ -43,7 +43,7 @@ These characteristics make gRPC an excellent choice for developing efficient and
 
 **1. Clone mayonaka**
 ```bash
-git clone https://github.com/yourusername/mayonaka.git
+git clone https://github.com/nasagong/mayonaka.git
 cd mayonaka
 ```
 
