@@ -56,7 +56,13 @@ go mod tidy
 ```bash
 mkdir mayonaka/internal/pb
 make proto_chat
-``` 
+```
+
+**4. Generate wire Code**
+```bash
+cd internal/injefct
+wire
+```
 
 **4. Run the server / redis**
 ```bash
