@@ -1,0 +1,75 @@
+syntax = "proto3";
+
+package chat;
+
+option go_package = "github.com/nasagong/mayonaka/internal/pb/chat;chat";
+
+service Chat {
+    rpc JoinOrCreateRoom (CreateRoomRequest) returns (CreateRoomResponse);
+    rpc CheckDuplicateUser (CheckUserNameRequest) returns (CheckUserNameResponse);
+    rpc SendMessage (ChatMessage) returns (SendResponse);
+    rpc ReceiveMessages (ReceiveRequest) returns (stream ChatMessage);
+    rpc QuitRoom (QuitRequest) returns (QuitResponse);
+}
+
+enum MessageType {
+    CHAT = 0;
+    NEW_USER_PUBKEY = 1;
+    AES_KEY = 2;
+    SYSTEM = 3;
+    AES_KEY_UPDATE = 4;
+}
+
+enum RoomCode {
+    SUCCESS = 0;
+    ID_ALREADY_EXISTS = 1;
+    UNKNOWN_ERROR = 2;
+}
+
+message ChatMessage {
+    string room_id = 1;
+    string sender = 2;
+    string content = 3;
+    int64 timestamp = 4;
+    MessageType type = 5;
+}
+
+message SendResponse {
+    bool success = 1;
+}
+
+message CheckUserNameRequest {
+    string username = 1;
+    string room_id = 2;
+}
+
+message CheckUserNameResponse {
+    bool is_duplicated = 1;
+}
+
+message CreateRoomRequest {
+    string room_id = 1;
+    string username = 2;
+    string pub_key = 3;           
+    string encrypted_aes_key = 4;
+}
+
+message CreateRoomResponse {    
+    RoomCode code = 1;
+    string room_id = 2;
+    string aes_key = 3;
+}
+
+message ReceiveRequest {
+    string room_id = 1;
+    string username = 2;
+}
+
+message QuitRequest {
+    string username = 1;
+    string room_id = 2;
+}
+
+message QuitResponse {
+    bool success = 1;
+}

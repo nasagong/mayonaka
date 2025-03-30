@@ -1,0 +1,23 @@
+# Go build artifacts
+/bin/
+/cmd/*.exe
+*.exe
+*.out
+
+# Wire generated code
+/internal/inject/wire_gen.go
+
+# Proto generated code
+/internal/pb/
+
+# IDE/editor specific
+.vscode/
+.idea/
+*.swp
+*~
+
+.DS_Store
+Thumbs.db
+
+*.log
+.env
