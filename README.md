@@ -3,7 +3,7 @@
 ![main](https://github.com/user-attachments/assets/11d17cca-9bfc-4693-ab44-b1c163bfe348)
 
 
-Mayonaka (真夜中) is an open-source terminal chat application that draws its name from the Japanese word for "midnight" while offering robust end-to-end encryption. 
+Mayonaka (**真夜中**) is an open-source terminal chat application that draws its name from the Japanese word for "midnight" while offering robust end-to-end encryption. 
 
 The application empowers users to exchange messages through a server that is fundamentally incapable of intercepting or deciphering their communication contents. 
 
@@ -35,7 +35,9 @@ These characteristics make gRPC an excellent choice for developing efficient and
 
 - **Redis**: A running Redis instance (install via redis.io or use Docker: docker run -d -p 6379:6379 redis).
 
-- **gRPC Tools**: nstall protoc and Go plugins (go install google.golang.org/protobuf/cmd/protoc-gen-go@latest and go install google.golang.org/grpc/cmd/protoc-gen-go-grpc@latest).
+- **gRPC Tools**: nstall protoc and Go plugins (
+    - go install google.golang.org/protobuf/cmd/protoc-gen-go@latest
+    - go install google.golang.org/grpc/cmd/protoc-gen-go-grpc@latest).
 
 ### Steps
 
