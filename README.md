@@ -64,7 +64,7 @@ cd internal/injefct
 wire
 ```
 
-**4. Run the server / redis**
+**5. Run the server / redis**
 ```bash
 make docker-dev
 ```
