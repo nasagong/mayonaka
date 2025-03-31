@@ -2,6 +2,8 @@
 
 ![main](https://github.com/user-attachments/assets/11d17cca-9bfc-4693-ab44-b1c163bfe348)
 
+![ani](https://github.com/user-attachments/assets/73218dac-55cf-471b-a155-880128ededb6)
+
 
 Mayonaka (**真夜中**) is an open-source terminal chat application that draws its name from the Japanese word for "midnight" while offering robust end-to-end encryption. 
 
