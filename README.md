@@ -56,7 +56,7 @@ go mod tidy
 
 **3. Generate gRPC Code**
 ```bash
-mkdir mayonaka/internal/pb
+mkdir internal/pb
 make proto_chat
 ```
 
