@@ -93,6 +93,13 @@ or if you want just localhost environment, use the command below.
 ./mayonaka_{yourOs}_{yourArch}
 ```
 
+**Note**
+
+If you are using macOS or Linux, make the binary executable first by running the following command:
+
+```bash
+chmod +x ./mayonaka_{yourOs}_{yourArch}
+```
 
 
 ## Overview
