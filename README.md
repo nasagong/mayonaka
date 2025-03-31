@@ -37,7 +37,7 @@ These characteristics make gRPC an excellent choice for developing efficient and
 
 - **Redis**: A running Redis instance (install via redis.io or use Docker: docker run -d -p 6379:6379 redis).
 
-- **gRPC Tools**: nstall protoc and Go plugins 
+- **gRPC Tools**: install protoc and Go plugins 
     - go install google.golang.org/protobuf/cmd/protoc-gen-go@latest
     - go install google.golang.org/grpc/cmd/protoc-gen-go-grpc@latest
 
@@ -87,7 +87,7 @@ To connect to a specific remote server, use the following command.
 ./mayonaka-darwin-arm64 -server=your_server:50051
 ```
 
-or if you want just localhost environment, use the command below.
+or if you just want to use the localhost environment, use the command below.
 
 ```bash
 ./mayonaka_{yourOs}_{yourArch}
