@@ -62,6 +62,7 @@ make proto_chat
 
 **4. Generate wire Code**
 ```bash
+go install github.com/google/wire/cmd/wire@latest
 cd internal/injefct
 wire
 ```
